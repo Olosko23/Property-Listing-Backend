@@ -1,0 +1,41 @@
+GET http://localhost:8080/api/v1/status
+
+###
+GET http://localhost:8080/api/v1/users/profile/652f99699bb82e82297b9d85
+
+###
+GET http://localhost:8080/api/v1/users/all
+
+###
+POST http://localhost:8080/api/v1/users/register/tenant
+Content-Type: application/json
+
+{
+    "name": "tenant1",
+    "email": "tenant1@gmail.com",
+    "password": "tenant111"
+}
+###
+POST http://localhost:8080/api/v1/users/register/landlord
+Content-Type: application/json
+
+{
+    "name": "landlord1",
+    "email": "landlord1@gmail.com",
+    "password": "landlord1"
+}
+
+###
+POST http://localhost:8080/api/v1/users/login 
+Content-Type: application/json
+
+{
+    "email": "landlord1@gmail.com",
+    "password": "landlord1"
+}
+
+###
+GET http://localhost:8080/api/v1/properties/type/condo
+
+###
+POST http://localhost:8080/api/v1/properties/
